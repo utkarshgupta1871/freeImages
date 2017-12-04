@@ -1,0 +1,11 @@
+<h1 class="main_head">Search Results</h1>
+<% @search.each do |i| %>
+<div class="image_container">
+	<img src=<%= i["attributes"]["table"]["urls"]["regular"]%>>
+	<div class="image_desc">
+		<p>Photo by Unsplash/<%= i["attributes"]["table"]["user"]["name"]%></p>
+		<a href=<%= i["attributes"]["table"]["user"]["links"]["html"]%>>Check Profile</a>
+	</div>
+</div>
+<br>
+<% end %>

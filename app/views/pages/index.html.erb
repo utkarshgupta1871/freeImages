@@ -1,0 +1,17 @@
+<h1 class="main_head">Welcome to Free Images</h1>
+<h2 class="sub_head">A place where you can get totally free HD images for all your needs</h2>
+
+<form>
+	<div id="search_bar">
+	<input type="text" name="term" id="search_field">
+	<script type="text/javascript">
+		$('#search_field').on('change', function(){
+			term=$('#search_field').val().toString();
+			$('#search_btn').attr("href", '/pages/show'+'?term='+term);
+		});
+	</script>
+	<a id='search_btn'><button>SEARCH</button></a>
+	</div>
+</form>
+
+
