@@ -1,4 +1,5 @@
 <h1 class="main_head">Search Results</h1>
+<div style="display: flex; justify-content: left; width: 100vw;flex-wrap: wrap;margin: 0vw 5vw;">
 <% @search.each do |i| %>
 <div class="image_container">
 	<img src=<%= i["attributes"]["table"]["urls"]["regular"]%>>
@@ -7,5 +8,6 @@
 		<a href=<%= i["attributes"]["table"]["user"]["links"]["html"]%>>Check Profile</a>
 	</div>
 </div>
-<br>
+
 <% end %>
+</div>
